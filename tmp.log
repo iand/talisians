@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta content="text/html; charset=us-ascii" http-equiv=
+"Content-Type" />
+<meta content="en-us" http-equiv="Content-Language" />
+<meta name="description" content=
+"This service tweets your most played artists from last.fm to twitter once per week" />
+<!-- Link Media -->
+<link href=
+"http://fonts.googleapis.com/css?family=Droid+Sans|Cantarell" rel=
+"stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href=
+"/media/css/screen-v3.css" /><!-- Shortcut Icon -->
+<link rel="shortcut icon" href="/favicon.png" /><!-- Scripts -->
+
+<script type="text/javascript" src=
+"http://platform.twitter.com/widgets.js">
+</script>
+<script type="text/javascript" src=
+"http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+</script>
+<script type="text/javascript">
+//<![CDATA[
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-12615258-9']);
+          _gaq.push(['_setDomainName', '.tweekly.fm']);   
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-5767397-3']);
+          _gaq.push(['_setDomainName', '.tweekly.fm']);   
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+//]]>
+</script><!-- Page Titles -->
+<title>Tweekly.fm | Last.fm Meets Twitter &#38; Facebook</title>
+</head>
+<body>
+<div id="contain" style="width: 1260px; min-width: 1260px;">
+<div id="menu">
+<div id="logo"><img src="/media/image/logo.png" alt=" " /></div>
+<h3>Tweekly.fm</h3>
+<ul>
+<li><a href="/">Home</a></li>
+<!-- <li><a href="#">Public Stream</a></li> -->
+<li><a href="/about">About Tweekly.fm</a></li>
+<li><a href="/statistics">Statistics</a></li>
+<li><a href="/help">Help Centre</a></li>
+<li><a href="http://blog.tweekly.fm/">Blog</a></li>
+<li><a href="/donate">Donate</a></li>
+</ul>
+<br />
+<br />
+<h3>My Tweekly</h3>
+<ul>
+<li><a href="/">Sign in to access<br />
+your features.</a></li>
+</ul>
+<br />
+<div id="meta">
+<p><a href="http://www.tweekly.fm">Tweekly.fm</a>, &#169; <a href=
+"http://dor.ky">Scott Wilcox</a> &#38; <a href=
+"http://www.shotbeak.com">Simon de la Rouviere</a> 2009-2010</p>
+<p><a href="/press">Press</a> - <a href="/privacy">Privacy
+Policy</a></p>
+<p><a href="https://code.dor.ky/tweekly-core/newticket">Report
+Bug/Problem</a></p>
+</div>
+</div>
+<div id="content">
+<h1>Kier Davis</h1>
+<p><img src=
+"http://a2.twimg.com/profile_images/1254792365/mAxn1FxK_normal"
+style=
+"float: left; margin-right: 20px; width: 48px; height: 48px;" />
+This user joined our service on 26th December 2010. You can find
+them on Twitter at <a href=
+"http://twitter.com/kierdavis">http://twitter.com/kierdavis</a>.
+Their last.fm username is <a href=
+"http://last.fm/user/kierdavis">kierdavis</a>. Their status is
+tweeted each week on Sunday.</p>
+<br />
+<div style="text-align: center;"><script type="text/javascript">
+//<![CDATA[
+<!--
+                        google_ad_client = "pub-2722646214104868";
+                        /* Tweekly.fm | User Page | Mid */
+                        google_ad_slot = "9474808730";
+                        google_ad_width = 468;
+                        google_ad_height = 60;
+                        //-->
+//]]>
+</script> <script type="text/javascript" src=
+"http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<h2>Top Weekly Artists</h2>
+<table style="width: 100%" id="artists">
+<tr>
+<td style="width: 30px">&#160;</td>
+<td>Artist:</td>
+<td>&#160;</td>
+<td>Play Count:</td>
+<td>Shared By:</td>
+</tr>
+<tr>
+<td class="position">1</td>
+<td><img class="band-large" src=
+"http://userserve-ak.last.fm/serve/126s/21875829.jpg" style=
+"width: 90px; height: 90px; display: block; background-image: url(/media/image/image.gif);" /></td>
+<td><a href="/artist/Linkin+Park">Linkin Park</a></td>
+<td class="align-center">2</td>
+<td class="align-center">0</td>
+</tr>
+<tr>
+<td class="position">2</td>
+<td><img class="band-large" src=
+"http://userserve-ak.last.fm/serve/126s/6628687.jpg" style=
+"width: 90px; height: 90px; display: block; background-image: url(/media/image/image.gif);" /></td>
+<td><a href="/artist/Infected+Mushroom">Infected Mushroom</a></td>
+<td class="align-center">2</td>
+<td class="align-center">0</td>
+</tr>
+<tr>
+<td class="position">3</td>
+<td><img class="band-large" src=
+"http://userserve-ak.last.fm/serve/126s/57825585.png" style=
+"width: 90px; height: 90px; display: block; background-image: url(/media/image/image.gif);" /></td>
+<td><a href="/artist/Pendulum">Pendulum</a></td>
+<td class="align-center">1</td>
+<td class="align-center">0</td>
+</tr>
+</table>
+<div>&#160;</div>
+<script type="text/javascript">
+//<![CDATA[
+<!--
+        google_ad_client = "pub-2722646214104868";
+        /* Tweekly.fm | User Page | Bot */
+        google_ad_slot = "7911678584";
+        google_ad_width = 468;
+        google_ad_height = 15;
+        //-->
+//]]>
+</script> <script type="text/javascript" src=
+"http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div id="context" style="padding-top: 10px;"><script type=
+"text/javascript">
+//<![CDATA[
+<!--
+                google_ad_client = "pub-2722646214104868";
+                google_ad_slot = "1441742863";
+                google_ad_width = 468;
+                google_ad_height = 60;
+                //-->
+//]]>
+</script> <script type="text/javascript" src=
+"http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<div style="clear: both; margin-bottom: -40px;">&#160;</div>
+<h3>Service Information</h3>
+<p>All system are currently running well. Today's updates have not
+yet been sent out.</p>
+<div class="divider"></div>
+<h3>Newly Signed Up</h3>
+<div class="user_avatar_grid"><a href=
+"/twitter/otomechan"><img class="user-small" alt=" " src=
+"http://a0.twimg.com/profile_images/1185584941/a4239eb5-637a-4484-87a9-9fb956c243c6_normal.png" /></a><a href="/twitter/bobreturns"><img class="user-small"
+alt=" " src=
+"http://a1.twimg.com/profile_images/848700217/PC140208_normal.jpg" /></a><a href="/twitter/vikars"><img class="user-small"
+alt=" " src=
+"http://a1.twimg.com/profile_images/1178820681/tumblr_lcoadnBEiZ1qdev7do1_500_normal.jpg" /></a><a href="/twitter/Nemoflow"><img class="user-small"
+alt=" " src=
+"http://a0.twimg.com/profile_images/782300259/2001-end-dave_normal.gif" /></a><a href="/twitter/solaarcrussh"><img class="user-small"
+alt=" " src=
+"http://a1.twimg.com/profile_images/605421036/18644_224540243263_511933263_3214011_7189132_n_normal.jpg" /></a><a href="/twitter/jasonpope"><img class="user-small"
+alt=" " src=
+"http://a2.twimg.com/profile_images/69596918/DSC_3745_1_S1_normal.jpg" /></a><a href="/twitter/theindiejerk"><img class="user-small"
+alt=" " src=
+"http://a2.twimg.com/profile_images/1170061494/1f630cf8-af0c-40a1-aa41-75d6cb74d530_normal.png" /></a><a href="/twitter/mark_milne"><img class="user-small"
+alt=" " src=
+"http://a1.twimg.com/profile_images/236679763/twitter_normal.jpg" /></a><a href="/twitter/Zifius"><img class="user-small"
+alt=" " src=
+"http://a2.twimg.com/profile_images/106231306/eye_normal.png" /></a><a href="/twitter/sora2522"><img class="user-small"
+alt=" " src=
+"http://a0.twimg.com/profile_images/1167949660/pretty_day_normal.jpg" /></a><a href="/twitter/susstudio"><img class="user-small"
+alt=" " src=
+"http://a2.twimg.com/profile_images/1149003806/96d0bce6-d98d-4d18-b890-860e3f29a078_normal.png" /></a><a href="/twitter/Skooj"><img class="user-small"
+alt=" " src=
+"http://a1.twimg.com/profile_images/54309458/Photo_17_normal.jpg" /></a><a href="/twitter/bloodpain"><img class="user-small"
+alt=" " src=
+"http://a2.twimg.com/profile_images/1152733598/av_normal.png" /></a><a href="/twitter/lestatswife"><img class="user-small"
+alt=" " src=
+"http://a1.twimg.com/profile_images/1153202849/misc010__alt_icons_normal.jpg" /></a><a href="/twitter/coloreddrums"><img class="user-small"
+alt=" " src=
+"http://a1.twimg.com/profile_images/992429137/8f256470-9b5c-4c8f-a423-e2715064febf_normal.png" /></a><a href="/twitter/steini25"><img class="user-small"
+alt=" " src=
+"http://a1.twimg.com/profile_images/1175441893/11_normal.png" /></a><a href="/twitter/_micster"><img class="user-small"
+alt=" " src=
+"http://a0.twimg.com/profile_images/1153795404/micster_normal.png" /></a></div>
+<div class="divider"></div>
+<h3>Top Artists This Week</h3>
+<div class="user_avatar_grid"><a href="/artist/Justin+Bieber"
+title="Justin Bieber"><img src=
+"http://userserve-ak.last.fm/serve/126s/49608673.png" alt=
+" " /></a><a href="/artist/The+Beatles" title=
+"The Beatles"><img src=
+"http://userserve-ak.last.fm/serve/126s/4069917.jpg" alt=
+" " /></a><a href="/artist/Glee+Cast" title="Glee Cast"><img src=
+"http://userserve-ak.last.fm/serve/126s/47799855.png" alt=
+" " /></a><a href="/artist/Kings+of+Leon" title=
+"Kings of Leon"><img src=
+"http://userserve-ak.last.fm/serve/126s/2206495.jpg" alt=
+" " /></a><a href="/artist/Muse" title="Muse"><img src=
+"http://userserve-ak.last.fm/serve/126s/15118.jpg" alt=
+" " /></a><a href="/artist/Green+Day" title="Green Day"><img src=
+"http://userserve-ak.last.fm/serve/126s/26837509.jpg" alt=
+" " /></a><a href="/artist/Taylor+Swift" title=
+"Taylor Swift"><img src=
+"http://userserve-ak.last.fm/serve/126s/53762421.png" alt=
+" " /></a><a href="/artist/Linkin+Park" title=
+"Linkin Park"><img src=
+"http://userserve-ak.last.fm/serve/126s/118787.jpg" alt=
+" " /></a><a href="/artist/Katy+Perry" title="Katy Perry"><img src=
+"http://userserve-ak.last.fm/serve/126s/45315595.png" alt=
+" " /></a></div>
+<div class="divider"></div>
+<h3>Find Us Elsewhere</h3>
+<p>Find Us on <a href="http://twitter.com/tweeklyfm">Twitter</a>,
+Like Us on <a href=
+"http://www.facebook.com/pages/Tweeklyfm/101227882458">Facebook</a>
+or Join the <a href=
+"http://www.orkut.com/Main#Community?cmm=106934062">Orkut
+Community</a>.<br />
+Contact the developer <a href="http://twitter.com/dordotky">via
+Twitter</a>, <a href="skype:dordotky">Skype</a> or <a href=
+"mailto:scott@tweekly.fm">email</a>.</p>
+<br /></div>
+</div>
+</body>
+</html>
