@@ -1,0 +1,17 @@
+status: 301
+content-location: http://del.icio.us/kierdavis
+vary: Accept-Encoding
+connection: close
+location: http://www.delicious.com/kierdavis
+cache-control: private
+date: Sun, 31 Jul 2011 14:52:27 GMT
+p3p: policyref="http://info.yahoo.com/w3c/p3p.xml",
+	CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi
+	SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT
+	STA POL HEA PRE LOC GOV"
+content-type: text/html; charset=utf-8
+-x-permanent-redirect-url: http://www.delicious.com/kierdavis
+-varied-accept-encoding: gzip, deflate
+
+The document has moved <A HREF="http://www.delicious.com/kierdavis">here</A>.<P>
+<!-- fe08.web.del.ac4.yahoo.net uncompressed/chunked Sun Jul 31 14:52:27 UTC 2011 -->
