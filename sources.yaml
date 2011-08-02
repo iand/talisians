@@ -8,6 +8,7 @@ sources:
     sources:
       - twitter/iand
       - pinboard/iand
+      - feed/blog.iandavis.com/feed/
   
   - name: Leigh Dodds
     sources:
@@ -17,22 +18,27 @@ sources:
   - name: Rob Styles
     sources:
       - twitter/mmmmmrob
+      - feed/dynamicorange.com/feed/
   
   - name: Malcolm Landon
     sources:
       - twitter/malcyL
+      - feed/malcolmlandon.wordpress.com/feed/
   
   - name: Sam Tunnicliffe
     sources:
       - twitter/beobal
+      - feed/www.beobal.com/blog/feed
   
   - name: Ian Corns
     sources:
       - twitter/TheAgileAnalyst
+      - feed/www.blogger.com/feeds/9501182/posts/default
   
   - name: Andrew Bate
     sources:
       - twitter/AndrewBate
+      - feed/www.astilla.co.uk/blog/feed/
   
   - name: Keith Alexander
     sources:
@@ -41,18 +47,22 @@ sources:
   - name: Nadeem Shabir
     sources:
       - twitter/kiyanwang
+      - feed/www.virtualchaos.co.uk/blog/feed/atom/
   
   - name: Justin Leavesley
     sources:
       - twitter/justinleavesley
+      - feed/www.justinleavesley.com/journal/rss.xml
   
   - name: Ross Singer
     sources:
       - twitter/rsinger
+      - feed/dilettantes.code4lib.org/blog/feed/
   
   - name: Chris Clarke
     sources:
       - twitter/robotrobot
+      - feed/slashdotrobot.wordpress.com/feed/
   
   - name: Michael Fitzmaurice
     sources:
@@ -61,6 +71,7 @@ sources:
   - name: Julian Higman
     sources:
       - twitter/jhigman
+      - feed/julianhigman.com/blog/feed/
   
   - name: Danisha Bathia
     sources:
@@ -85,3 +96,35 @@ sources:
   - name: Mark Bush
     sources:
       - twitter/Onkloud9
+  
+  - name: Rhys Wilkins
+    sources:
+      - twitter/mauvedeity
+  
+  - name: Dave Whitehouse
+    sources:
+      - twitter/daveiw
+      - feed/blog.jsdi.co.uk/?feed=rss2
+  
+  - name: Richard Francis
+    sources:
+      - twitter/rich_francis
+  
+  - name: Richard Wallis
+    sources:
+      - twitter/rjw
+      - feed/itoccurs.wordpress.com/feed/
+  
+  - name: Matt Moran
+    sources:
+      - feed/www.blogger.com/feeds/7399594943995830623/posts/default
+  
+  - name: Tim Hodson
+    sources:
+      - twitter/tim_hodson
+      - feed/informationtakesover.co.uk/feed/
+  
+  - name: Zach Beauvais
+    sources:
+      - twitter/zbeauvais
+      - feed/feeds.feedburner.com/ZachBeauvais

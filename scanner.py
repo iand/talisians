@@ -173,14 +173,6 @@ class Link(object):
   def __repr__(self):
     return "<Link %s %r (freq = %d, age = %d hrs, score = %.2f)>" % (self.url, self.text, self.frequency, self.age, self.score)
 
-sources = {
-  TwitterSource: [
-    "mauvedeity",
-    "daveiw",
-    "rich_francis",
-  ],
-}
-
 def read_sources():
   d = {}
   
@@ -203,6 +195,9 @@ def read_sources():
         cls = DeliciousSource
       elif type == "pinboard":
         cls = PinboardSource
+      elif type == "feed":
+        cls = FeedSource
+        user = "http://" + user # its part of a URL
       
       sources.setdefault(cls, []).append((user, realname))
   
