@@ -121,7 +121,7 @@ sources:
   
   - name: Tim Hodson
     sources:
-      - twitter/tim_hodson
+      - twitter/timhodson
       - feed/informationtakesover.co.uk/feed/
   
   - name: Zach Beauvais

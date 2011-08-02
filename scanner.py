@@ -25,20 +25,23 @@ SOURCES_FILE = os.path.join(SCRIPT_DIR, "sources.yaml")
 TWAPI_FILE = os.path.join(SCRIPT_DIR, "twapi.txt")
 REDIRECTS_FILE = os.path.join(SCRIPT_DIR, "redirects.pkl")
 FOUND_FILE = os.path.join(SCRIPT_DIR, "found.pkl")
+TITLES_FILE = os.path.join(SCRIPT_DIr, "titles.pkl")
 LINKS_FILE = os.path.join(SCRIPT_DIR, "links.pkl")
 HTML_OUTPUT = os.path.join(SCRIPT_DIR, "web/index.html")
 
 f = open(TWAPI_FILE, "r")
-TWITTER_CON_KEY = f.readline()
-TWITTER_CON_SECRET = f.readline()
-TWITTER_ACC_KEY = f.readline()
-TWITTER_ACC_SECRET = f.readline()
+TWITTER_CON_KEY = f.readline().strip()
+TWITTER_CON_SECRET = f.readline().strip()
+TWITTER_ACC_KEY = f.readline().strip()
+TWITTER_ACC_SECRET = f.readline().strip()
 f.close()
 
 #~ URL_REGEX = re.compile(r"""((?:[a-z][\w-]+:(?:/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|(([^\s()<>]+|(([^\s()<>]+)))*))+(?:(([^\s()<>]+|(([^\s()<>]+)))*)|[^\s`!()[]{};:'".,<>?]))""", re.DOTALL)
 URL_REGEX = re.compile(r"https?://[^\s)\]]+")
 
 GRAVITY = 1.8
+
+R_TITLE = re.compile(r"<(?:\w+:)title>(.+?)</(?:\w+:)title>")
 
 ENTITY = re.compile(r"&(\w+?);")
 def ENTITY_REP(m):
@@ -136,7 +139,7 @@ class Link(object):
   def age(self):
     "The age of the item, in hours"
     
-    diff = time.time() - self.time_found
+    diff = time.time() - self.time_added
     return int(diff / 3600)
   
   @property
@@ -214,18 +217,22 @@ def get_page_title(content):
   
     root = etree.fromstring(content)
   
+    head = root.find("{http://www.w3.org/1999/xhtml}head")
+    title = head.find("{http://www.w3.org/1999/xhtml}title")
+    titletext = title.text
+    
+    time.sleep(0.5)
+    
+    return titletext
+  
   except Exception, e:
     print "\tHTML Parser Error:", str(e)
+    
+    m = R_TITLE.search(content)
+    if m is not None:
+      return m.group(1)
+    
     return ""
-  
-  head = root.find("{http://www.w3.org/1999/xhtml}head")
-  title = head.find("{http://www.w3.org/1999/xhtml}title")
-  titletext = title.text
-  
-  time.sleep(0.5)
-  
-  print "\tTitle:", titletext
-  return titletext
 
 def get_items():
   links = {}
@@ -240,6 +247,8 @@ def get_items():
   except:
     if f is not None: f.close()
   
+  #~ print redirects
+  
   found = {}
   f = None
   try:
@@ -247,6 +256,16 @@ def get_items():
     found = pickle.load(f)
     f.close()
     print "Read %s" % FOUND_FILE
+  except:
+    if f is not None: f.close()
+  
+  titles = {}
+  f = None
+  try:
+    f = open(TITLES_FILE, "rb")
+    titles = pickle.load(f)
+    f.close()
+    print "Read %s" % TITLES_FILE
   except:
     if f is not None: f.close()
   
@@ -263,8 +282,11 @@ def get_items():
           if text is not None:
             text = text.replace("\n", " ")
           
+          if isinstance(link, unicode):
+            link = link.encode("utf-8")
+          
           if link in redirects:
-            print "Followed cached redirects from '%s'", % link
+            print "Followed cached redirects from '%s'" % link,
             link = redirects[link]
             print "to '%s'" % link
           
@@ -281,11 +303,13 @@ def get_items():
             
             if "content-location" in response and link != response["content-location"]:
               newlink = urlparse.urljoin(link, response["content-location"])
-              
-              print "Followed redirects from '%s' to '%s'" % (link, newlink)
-              
-              redirects[link] = newlink
-              link = newlink
+            else:
+              newlink = link
+            
+            print "Followed redirects from '%s' to '%s'" % (link, newlink)
+            
+            redirects[link] = newlink
+            link = newlink
           
           if link not in found:
             found[link] = time.time()
@@ -305,6 +329,7 @@ def get_items():
               text = get_page_title(content)
               if not text:
                 continue
+              print "\tTitle:", text
             
             l = links[link] = Link(link, text, time_added)
             l.time_found = found[link]
@@ -334,6 +359,11 @@ def get_items():
     pickle.dump(found, f)
     f.close()
     print "Wrote %s" % FOUND_FILE
+    
+    f = open(TITLES_FILE, "wb")
+    pickle.dump(titles, f)
+    f.close()
+    print "Wrote %s" % TITLES_FILE
   
   return links
 
