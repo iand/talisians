@@ -1,0 +1,87 @@
+sources:
+  - name: Kier Davis
+    sources:
+      - twitter/kierdavis
+      - delicious/kierdavis
+  
+  - name: Ian Davis
+    sources:
+      - twitter/iand
+      - pinboard/iand
+  
+  - name: Leigh Dodds
+    sources:
+      - twitter/ldodds
+      - delicious/ldodds
+  
+  - name: Rob Styles
+    sources:
+      - twitter/mmmmmrob
+  
+  - name: Malcolm Landon
+    sources:
+      - twitter/malcyL
+  
+  - name: Sam Tunnicliffe
+    sources:
+      - twitter/beobal
+  
+  - name: Ian Corns
+    sources:
+      - twitter/TheAgileAnalyst
+  
+  - name: Andrew Bate
+    sources:
+      - twitter/AndrewBate
+  
+  - name: Keith Alexander
+    sources:
+      - twitter/keithalexander
+  
+  - name: Nadeem Shabir
+    sources:
+      - twitter/kiyanwang
+  
+  - name: Justin Leavesley
+    sources:
+      - twitter/justinleavesley
+  
+  - name: Ross Singer
+    sources:
+      - twitter/rsinger
+  
+  - name: Chris Clarke
+    sources:
+      - twitter/robotrobot
+  
+  - name: Michael Fitzmaurice
+    sources:
+      - twitter/mickyfitz
+  
+  - name: Julian Higman
+    sources:
+      - twitter/jhigman
+  
+  - name: Danisha Bathia
+    sources:
+      - twitter/kukibee
+  
+  - name: Chris Waring
+    sources:
+      - twitter/cwaring
+  
+  - name: Laurian Gridinoc
+    sources:
+      - twitter/gridinoc
+  
+  - name: Tom Heath
+    sources:
+      - twitter/tommyH
+  
+  - name: Alan Dix
+    sources:
+      - twitter/alandix
+  
+  - name: Mark Bush
+    sources:
+      - twitter/Onkloud9
